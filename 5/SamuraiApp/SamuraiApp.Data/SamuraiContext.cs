@@ -17,7 +17,7 @@ namespace SamuraiApp.Data
         {
             //Express the category as an array even if we use only one category
             optionsBuilder.UseNpgsql(
-                    "Host=postgres-db-oversea-pilot.postgres.database.azure.com;Database=samuraiappdata;Username=postgresadmin@postgres-db-oversea-pilot;Password=oversea@Pilot;SslMode=Require",
+                    "Host=sanspostgres.postgres.database.azure.com;Database=samuraiappdata;Username=sandeep@sanspostgres;Password=windows10#;SslMode=Require",
                                  options => options.MaxBatchSize(100))
                 .LogTo(Console.WriteLine, new [] {DbLoggerCategory.Database.Command.Name}, LogLevel.Information)
                 .EnableSensitiveDataLogging();
